@@ -1,23 +1,41 @@
-# Jornada-AI
-Repositório para guardar arquivos da Jornada AI
+# 🧠 Dino Runner AI
 
-Aula 1: Breve explicação sobre o que é uma 'AI' (inteligência artificial), aprendemos a instalar o software 'VSCode' e criamos um código no arquivo 'index.html' que nos leva a web.
+Este projeto é uma inteligência artificial simples baseada em redes neurais que aprende a jogar o famoso jogo do Dinossauro do Google Chrome (T-Rex Runner) usando mutação genética.
 
-Aula 2: Criamos o código de uma equação em 'utils.js' que facilitará a criação do nosso código final e começamos a criação do código de RNA (Rede Neural Artificial, nossa inteligência artificial).
+## 🚀 Sobre o Projeto
 
-Aula 3: Finalização do nosso código de RNA em 'RNA.js'.
+A ideia principal é criar vários "dinossauros" com redes neurais artificiais (RNA) que aprendem a evitar obstáculos. A cada rodada, a melhor rede é salva e utilizada como base para a próxima geração com pequenas mutações, simulando evolução genética.
 
-Aula 4: Criamos um código de controles que serão utilizados no jogo 'T-Rex Game' (jogo do dinossauro do chrome) e começamos o nosso código principal em 'script.js' (que unirá todos os códigos).
+## 📁 Estrutura do Projeto
 
-Aula 5: Finalizamos o nosso código em 'script.js'.
+- `index.html`: Página base com informações simples.
+- `RNA.js`: Contém a lógica das redes neurais.
+- `controls.js`: Simula os comandos de teclado (pular e abaixar).
+- `utils.js`: Funções auxiliares, como cálculo de distância.
+- `script.js`: Contém a lógica principal de treino e execução do jogo.
+- `README.md`: Este arquivo.
 
-Aula 6: Explicação de como utilizamos o GitHub:
+## 🧠 Como a IA funciona
 
-  Um breve resumo sobre;
-    Repositório; serve para armazenar nossos projetos.
-    Commits; vai guardar todas as atualizações feitas no nosso projeto.
-      - (No caso de um erro feito em uma nova atualização que inutilize nosso código, ou no caso de uma atualização temporária nos permite voltar para uma atualização anterior sem a alteração)
-    Branch; ramificações criadas conforme as alterações no nosso código original.
-    GitLog; nos permite visualizar as alterações feitas em uma branch ou em algum arquivo em especial.
+1. Cada dinossauro recebe uma rede neural com 3 entradas:
+   - Distância até o obstáculo.
+   - Velocidade atual.
+   - Altura relativa do obstáculo.
 
-Aula 7: Ultima aula antes do encerramento em live, colocamos o código para funcionar em jogo!
+2. A rede calcula se deve pular ou abaixar.
+
+3. Após bater no obstáculo, a pontuação é avaliada.
+
+4. A melhor RNA da geração é usada como base para a próxima, com mutações.
+
+## ✅ Requisitos
+
+- Navegador moderno com suporte a módulos JavaScript (ES Modules).
+- Acesso ao jogo do dinossauro do Chrome (`chrome://dino`).
+- Servidor local como [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) ou outro de sua preferência.
+
+## 🧭 Como Executar
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/dino-runner-ai.git
